@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxWidth="330" minWidth="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="keyline.view.CharacterPropertyController">
+   <children>
+   	<ScrollPane prefHeight="382.0" prefWidth="314.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+   	   <content>
+   		  <AnchorPane minHeight="30.0" minWidth="30.0">
+   			 <children>
+   				<TabPane layoutY="50.0" minWidth="100.0" prefWidth="300.0" styleClass="keyline-property" stylesheets="@css/keyline.ui.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="50.0">
+   				  <tabs>
+   					<Tab text="基本情報">
+   					  <content>
+   							  <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="280.0">
+   									 <children>
+   										<Label layoutX="14.0" layoutY="16.0" text="姓" />
+   										<TextField layoutX="84.0" layoutY="12.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="30.0" />
+   										<Label layoutX="14.0" layoutY="48.0" text="名" />
+   										<TextField layoutX="84.0" layoutY="44.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="30.0" />
+   										<HBox layoutX="84.0" layoutY="77.0" AnchorPane.leftAnchor="75.0">
+   										   <children>
+   											  <ToggleButton mnemonicParsing="false" text="男" />
+   											  <ToggleButton mnemonicParsing="false" text="女" />
+   										   </children>
+   										</HBox>
+   										<Label layoutX="14.0" layoutY="81.0" text="性別" />
+   										<DatePicker layoutX="84.0" layoutY="111.0" promptText="yyyy/mm/dd" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="30.0" />
+   										<Label layoutX="14.0" layoutY="114.0" text="誕生日" />
+   										<Label layoutX="14.0" layoutY="149.0" text="死亡日" />
+   										<DatePicker layoutX="75.0" layoutY="146.0" promptText="yyyy/mm/dd" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="30.0" />
+   										<ChoiceBox layoutX="75.0" layoutY="179.0" prefWidth="150.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="30.0" />
+   										<Label layoutX="12.0" layoutY="182.0" text="重要度" />
+   									 </children>
+   								  </AnchorPane>
+   					  </content>
+   					</Tab>
+   					<Tab text="関連">
+   					  <content>
+   							  <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="280.0">
+   									 <children>
+   										<Label layoutX="14.0" layoutY="50.0" text="要素" />
+                                    <ComboBox editable="true" layoutX="75.0" layoutY="46.0" prefWidth="150.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="30.0" />
+   										<Button layoutX="75.0" layoutY="81.0" mnemonicParsing="false" text="追加" />
+   										<HBox layoutX="14.0" layoutY="14.0">
+   										   <children>
+   											  <ToggleButton mnemonicParsing="false" text="集団" />
+   											  <ToggleButton mnemonicParsing="false" text="属性" />
+   											  <ToggleButton mnemonicParsing="false" text="スキル" />
+   											  <ToggleButton mnemonicParsing="false" text="場所" />
+   											  <ToggleButton mnemonicParsing="false" text="アイテム" />
+   										   </children>
+   										</HBox>
+                                    <VBox layoutX="10.0" layoutY="116.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                                       <children>
+                                          <TitledPane expanded="true" minHeight="0.0" text="集団">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" />
+                                             </content>
+                                          </TitledPane>
+                                          <TitledPane expanded="true" minHeight="0.0" text="属性">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" />
+                                             </content>
+                                          </TitledPane>
+                                          <TitledPane expanded="true" minHeight="0.0" text="スキル">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" />
+                                             </content>
+                                          </TitledPane>
+                                          <TitledPane expanded="true" minHeight="0.0" text="場所">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" />
+                                             </content>
+                                          </TitledPane>
+                                          <TitledPane expanded="true" minHeight="0.0" text="アイテム">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" />
+                                             </content>
+                                          </TitledPane>
+                                       </children>
+                                    </VBox>
+   									 </children>
+   								  </AnchorPane>
+   					  </content>
+   					</Tab>
+                        <Tab text="パラメータ">
+                           <content>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutX="10.0" layoutY="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                                       <children>
+                                          <TitledPane layoutX="14.0" layoutY="14.0" text="untitled" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                            <content>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0">
+                                                   <children>
+                                                      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Button" />
+                                                   </children>
+                                                </AnchorPane>
+                                            </content>
+                                          </TitledPane>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+   				  </tabs>
+   				</TabPane>
+   				<Label layoutX="14.0" layoutY="18.0" text="登場人物">
+   				   <font>
+   					  <Font name="Meiryo UI Bold" size="18.0" />
+   				   </font>
+   				</Label>
+   				<Label layoutX="114.0" layoutY="14.0" text="登場人物の名前">
+   				   <font>
+   					  <Font name="Meiryo UI" size="22.0" />
+   				   </font>
+   				</Label>
+   			 </children>
+   		  </AnchorPane>
+   	   </content>
+   	</ScrollPane>
+   </children>
+</AnchorPane>
