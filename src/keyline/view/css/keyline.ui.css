@@ -1,0 +1,104 @@
+
+.tab-pane.keyline-property
+{
+	-fx-background-color: white;
+}
+.tab-pane.keyline-property .tab-header-background
+{
+	-fx-background-color: white;
+}
+.tab-pane.keyline-property .tab
+{
+	-fx-background-color: white;
+	-fx-padding: 4px 16px;
+	-fx-border-color: #bcbcbc;
+	-fx-border-style: solid;
+	-fx-border-width: 1px;
+	-fx-border-radius: 20px;
+}
+.tab-pane.keyline-property .tab:selected
+{
+	-fx-background-color: #dedede;
+	-fx-border-radius: 0px;
+}
+.tab-pane.keyline-property .tab-label
+{
+	-fx-text-fill: #444;
+}
+.tab-pane.keyline-property .tab-label:hover
+{
+	-fx-text-fill: #44f;
+}
+
+
+.table-view.keyline-property
+{
+	-fx-background-color: white;
+	-fx-text-fill: blue;
+    -fx-control-inner-background: white;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+}
+
+.table-view.keyline-property .column-header-background
+{
+    -fx-background-color: white;
+}
+.table-view.keyline-property .column-header .label{
+     -fx-text-fill: white;
+	 -fx-font: bold 14pt "Meiryo UI";
+}
+
+.table-view.keyline-property .column-header, .table-view.keyline-property .filler {
+    -fx-background-color: #aaa;
+    -fx-size: 35px;
+	-fx-pref-height: 36px;
+    -fx-border-color: #aaa;
+    -fx-border-insets: -1 0 0 -1;
+    -fx-padding: 0 5 0 0;
+}
+
+.table-view.keyline-property .table-row-cell {
+	-fx-background-color: white;
+	-fx-text-fill: black;
+	-fx-pref-height: 36px;
+	-fx-font: normal 11pt "Meiryo UI";
+}
+
+.table-view.keyline-property .table-row-cell:hover {
+	-fx-background-color: #e6e6e6;
+}
+
+.table-view.keyline-property .table-row-cell:selected:filled:focused {
+	-fx-background-color: #d0d0d0;
+}
+
+.table-view.keyline-property .table-cell {
+	-fx-alignment: CENTER;
+}
+
+.table-view.keyline-property .table-row-cell:hover .table-cell {
+	-fx-text-fill: #666;
+}
+
+.table-view.keyline-property .table-row-cell:selected:filled:focused .table-cell {
+	-fx-text-fill: black;
+	-fx-border-color: transparent transparent transparent transparent;
+}
+
+
+.split-pane:horizontal .split-pane-divider {
+    -fx-border-color: transparent #ccc;
+    -fx-background-color: transparent, derive(#1d1d1d,20%);
+	-fx-border-width: 2px;
+	-fx-pref-width: 2px;
+}
+
+
+.scroll-bar
+{
+	-fx-pref-height: 25px;
+	-fx-pref-width: 25px;
+	-fx-background-color: white;
+}
+

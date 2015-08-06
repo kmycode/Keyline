@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import keyline.ui.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@css/keyline.ui.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="keyline.view.MainWindowModelListController">
+   <children>
+			<SplitPane fx:id="mainSplitPane" dividerPositions="0.29797979797979796" prefHeight="400.0" prefWidth="600.0"  AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			</SplitPane>
+				   <!--
+   				<TabPane layoutX="0.0" layoutY="0.0" prefHeight="200" prefWidth="200" styleClass="keyline-property" tabClosingPolicy="UNAVAILABLE">
+   					<tabs>
+						<Tab text="Untitled Tab 1">
+						  <content>
+							<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+						  </content>
+						</Tab>
+					</tabs>
+   				</TabPane>
+				-->
+   </children>
+</AnchorPane>
