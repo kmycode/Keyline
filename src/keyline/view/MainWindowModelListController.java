@@ -54,12 +54,12 @@ public class MainWindowModelListController implements Initializable {
 		CharacterModel c1 = new CharacterModel();
 		CharacterModel c2 = new CharacterModel();
 		CharacterModel c3 = new CharacterModel();
-		c1.lastNameProperty().set("是永");
-		c1.firstNameProperty().set("長読");
-		c2.lastNameProperty().set("朝霧");
-		c2.firstNameProperty().set("かれん");
-		c3.lastNameProperty().set("木之本");
-		c3.firstNameProperty().set("梓");
+		c1.lastNameProperty().set("山田");
+		c1.firstNameProperty().set("太郎");
+		c2.lastNameProperty().set("植田");
+		c2.firstNameProperty().set("みぎわ");
+		c3.lastNameProperty().set("天野");
+		c3.firstNameProperty().set("鈴");
 		ObservableList<CharacterModel> characterList = FXCollections.observableArrayList(
 				c1,
 				c2,
