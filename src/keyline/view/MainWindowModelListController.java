@@ -25,8 +25,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
-import keyline.model.CharacterModel;
-import keyline.modeltableview.CharacterTableView;
+import keyline.domodel.CharacterModel;
 
 /**
  * FXML Controller class
@@ -66,7 +65,7 @@ public class MainWindowModelListController implements Initializable {
 				c3
 		);
 
-		CharacterTableView characterTableView = new CharacterTableView();
+		ListController characterTableView = new ListController();
 		characterTableView.addModel(c1);
 		characterTableView.addModel(c2);
 		characterTableView.addModel(c3);
