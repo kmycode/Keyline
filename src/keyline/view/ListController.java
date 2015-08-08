@@ -5,33 +5,49 @@
  */
 package keyline.view;
 
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.ReadOnlyStringWrapper;
+import javafx.beans.property.SimpleObjectProperty;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.TreeItem;
+import javafx.scene.control.TreeTableColumn;
+import javafx.scene.control.TreeTableColumn.CellDataFeatures;
+import javafx.scene.control.TreeTableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.AnchorPane;
+import keyline.blmodel.ModelManager;
 import keyline.domodel.CharacterModel;
+import keyline.domodel.Model;
 
 /**
  *
  * @author KMY
  */
-public class ListController extends TableView<CharacterModel> {
+public class ListController extends Controller implements Initializable {
 
-	private TableColumn<CharacterModel, String> lastNameColumn = new TableColumn<CharacterModel, String>("姓");
-	private TableColumn<CharacterModel, String> firstNameColumn = new TableColumn<CharacterModel, String>("名前");
+	@FXML
+	private TreeTableView<Model> mainListPane;
 
-	public ListController () {
-		this.getStyleClass().add("keyline-property");
+	@FXML
+	private TreeTableColumn<Model, String> nameColumn;
 
-		this.lastNameColumn.setCellValueFactory(new PropertyValueFactory<CharacterModel, String>("lastName"));
-		this.lastNameColumn.setPrefWidth(100);
-		this.getColumns().add(this.lastNameColumn);
-		this.firstNameColumn.setCellValueFactory(new PropertyValueFactory<CharacterModel, String>("firstName"));
-		this.firstNameColumn.setPrefWidth(100);
-		this.getColumns().add(this.firstNameColumn);
+	private TreeItem<Model> root;
+
+	private ObjectProperty<TreeItem<Model>> rootItem = new SimpleObjectProperty<TreeItem<Model>>();
+
+	public void initialize (URL url, ResourceBundle rb) {
+		this.mainListPane.rootProperty().bind(this.rootItem);
+
+		this.nameColumn.setCellValueFactory((p)
+				-> new ReadOnlyStringWrapper(p.getValue().getValue().nameProperty().get()));
 	}
 
-	public void addModel (CharacterModel model) {
-		this.getItems().add(model);
+	public ObjectProperty<TreeItem<Model>> rootItemProperty () {
+		return this.rootItem;
 	}
 
 }

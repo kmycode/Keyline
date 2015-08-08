@@ -5,20 +5,27 @@
  */
 package keyline.view;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.control.SplitPane;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import keyline.domodel.CharacterModel;
 
 /**
  *
  * @author KMY
  */
-public class MainWindowController implements Initializable {
+public class MainWindowController extends Controller implements Initializable {
 
 	/*
 		@FXML
@@ -30,11 +37,9 @@ public class MainWindowController implements Initializable {
 		label.setText ("Hello World!");
 		}
 	 */
-	@FXML
-	private MainWindowModelListController mainModelListController;
 
 	@FXML
-	private AnchorPane characterModePane;
+	SplitPane mainSplitPane;
 
 	private Stage stage;
 	private DoubleProperty width = new SimpleDoubleProperty();
@@ -42,28 +47,14 @@ public class MainWindowController implements Initializable {
 
 	@Override
 	public void initialize (URL url, ResourceBundle rb) {
-		// TODO
+		CharacterModel c1 = new CharacterModel();
+		c1.lastNameProperty().set("朝霧");
+		c1.firstNameProperty().set("かれん");
+		//mainModelListController.addModel(c1);
 	}
 
-	public void initialize (Stage myStage) {
-		this.stage = myStage;
-		this.width.bind(this.stage.widthProperty());
-		this.mainModelListController.setWidthProperty(this.width);
-		this.height.bind(this.stage.heightProperty());
-
-		/*
-		 * 		BooleanProperty tb = new SimpleBooleanProperty();
-		tb.addListener((b) -> {
-			try {
-				Thread.sleep(3000);
-				System.out.println("おはよう");
-			} catch (InterruptedException ex) {
-				Logger.getLogger(MainWindowController.class.getName()).log(Level.SEVERE, null, ex);
-			}
-		});
-		tb.set(true);
-		System.out.println("こんにちは");
-		 */
+	public void setMainListPane (Node node) {
+		this.mainSplitPane.getItems().add(node);
 	}
 
 }

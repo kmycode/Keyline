@@ -14,7 +14,7 @@ import javafx.fxml.Initializable;
  *
  * @author KMY
  */
-public class CharacterPropertyController implements Initializable {
+public class CharacterPropertyController extends Controller implements Initializable {
 
 	/**
 	 * Initializes the controller class.

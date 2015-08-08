@@ -3,12 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package keyline.view;
+package keyline.presenter;
+
+import javafx.stage.Stage;
 
 /**
  *
  * @author KMY
  */
-public abstract class Controller {
+public interface IWindowable {
+
+	public void setStage (Stage stage);
 
 }

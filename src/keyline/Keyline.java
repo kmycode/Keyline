@@ -9,6 +9,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import keyline.presenter.MainWindowPresenter;
 import keyline.view.MainWindowController;
 
 /**
@@ -19,7 +20,8 @@ public class Keyline extends Application {
 
 	@Override
 	public void start (Stage stage) throws Exception {
-		FXMLLoader loader = new FXMLLoader();
+		/*
+		 * 		FXMLLoader loader = new FXMLLoader();
 		loader.setLocation(getClass().getResource("view/MainWindow.fxml"));
 		Parent root = loader.load();
 		//Parent root = FXMLLoader.load (getClass ().getResource ("view/MainWindow.fxml"));
@@ -29,8 +31,12 @@ public class Keyline extends Application {
 
 		stage.setScene (scene);
 		stage.show();
+		 */
 
-		controller.initialize(stage);
+		MainWindowPresenter presenter = new MainWindowPresenter();
+		presenter.setStage(stage);
+		stage.show();
+
 		//stage.widthProperty().addListener((x) -> controller.resize(((ReadOnlyDoubleProperty) x).get(), 400));
 	}
 

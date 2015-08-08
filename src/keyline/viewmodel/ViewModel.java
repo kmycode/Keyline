@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package keyline.view;
+package keyline.viewmodel;
 
 /**
  *
  * @author KMY
  */
-public abstract class Controller {
+public abstract class ViewModel {
 
 }

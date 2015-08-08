@@ -564,11 +564,10 @@
 	   </Ribbon>
 
 	   <AnchorPane fx:id="backgroundPane" layoutX="0.0" layoutY="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="156.0" style="-fx-background-color:#dedede;" >
-			<AnchorPane fx:id="characterModePane" layoutX="0.0" layoutY="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-			   <children>
-					<fx:include fx:id="mainModelList" source="MainWindowModelList.fxml" />
-			   </children>
-			</AnchorPane>
+			<children>
+				 <SplitPane fx:id="mainSplitPane" dividerPositions="0.29797979797979796" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+				 </SplitPane>
+			</children>
 	   </AnchorPane>
    </children>
 </AnchorPane>

@@ -5,10 +5,18 @@
  */
 package keyline.converter;
 
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
+import keyline.domodel.CharacterModel;
+
 /**
  *
  * @author KMY
  */
-public class CharacterNameConverter {
+public final class CharacterNameConverter extends Converter {
 
+	public static void convert (StringProperty property, CharacterModel model) {
+		property.set(model.lastNameProperty().get() + " " + model.firstNameProperty().
+				get());
+	}
 }

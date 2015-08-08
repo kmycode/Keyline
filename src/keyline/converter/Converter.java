@@ -10,5 +10,6 @@ package keyline.converter;
  * @author KMY
  */
 public class Converter {
-
+	protected Converter () {
+	}
 }
