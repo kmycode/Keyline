@@ -4,18 +4,14 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.ear
 
 # virtual machine crash logs, let's see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-/src/com/pixelduke/javafx/ribbon/resource/
-/src/com/pixelduke/javafx/ribbon/skin/
-/src/com/pixelduke/javafx/ribbon/
 /.git/
 /.svn/
 /build/
 /dist/
-/jar/
+/jar/*
 /lib/
