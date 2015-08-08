@@ -27,12 +27,12 @@ public class CharacterManager extends ModelManager<CharacterModel> {
 		c1.firstNameProperty().set("かれん");
 		this.addModel(c1);
 		CharacterModel c2 = new CharacterModel();
-		c2.lastNameProperty().set("朝霧");
-		c2.firstNameProperty().set("かれん");
+		c2.lastNameProperty().set("是永");
+		c2.firstNameProperty().set("長読");
 		this.addModel(c2);
 		CharacterModel c3 = new CharacterModel();
-		c3.lastNameProperty().set("朝霧");
-		c3.firstNameProperty().set("かれん");
+		c3.lastNameProperty().set("長瀬");
+		c3.firstNameProperty().set("学");
 		this.addModel(c3);
 	}
 

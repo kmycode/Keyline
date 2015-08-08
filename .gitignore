@@ -9,9 +9,15 @@
 
 # virtual machine crash logs, let's see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# Not upload directories
 /.git/
 /.svn/
 /build/
 /dist/
 /jar/*
 /lib/
+
+# Others (ex. system files)
+desktop.ini
+.DS_STORE
