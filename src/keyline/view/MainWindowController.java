@@ -27,17 +27,6 @@ import keyline.domodel.CharacterModel;
  */
 public class MainWindowController extends Controller implements Initializable {
 
-	/*
-		@FXML
-	private Label label;
-
-	@FXML
-	private void handleButtonAction (ActionEvent event) {
-		System.out.println ("You clicked me!");
-		label.setText ("Hello World!");
-		}
-	 */
-
 	@FXML
 	SplitPane mainSplitPane;
 
@@ -47,10 +36,6 @@ public class MainWindowController extends Controller implements Initializable {
 
 	@Override
 	public void initialize (URL url, ResourceBundle rb) {
-		CharacterModel c1 = new CharacterModel();
-		c1.lastNameProperty().set("朝霧");
-		c1.firstNameProperty().set("かれん");
-		//mainModelListController.addModel(c1);
 	}
 
 	public void setMainListPane (Node node) {

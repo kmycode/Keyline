@@ -7,14 +7,16 @@ package keyline.view;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.layout.AnchorPane;
 
 /**
  * FXML Controller class
  *
  * @author KMY
  */
-public class PropertyParameterController implements Initializable {
+public class PropertyParameterController extends Controller implements Initializable {
 
 	/**
 	 * Initializes the controller class.

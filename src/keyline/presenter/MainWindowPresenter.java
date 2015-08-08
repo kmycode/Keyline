@@ -27,7 +27,7 @@ public class MainWindowPresenter extends Presenter implements IWindowable {
 	private Node node;
 
 	private ListPresenter mainListPresenter;
-	private CharacterPropertyPresenter secondPropertyPresenter;
+	private PropertyPresenter secondPropertyPresenter;
 
 	private ModelManager modelManager;
 
@@ -39,7 +39,7 @@ public class MainWindowPresenter extends Presenter implements IWindowable {
 		this.mainListPresenter = new ListPresenter();
 		this.controller.setMainListPane(this.mainListPresenter.getNode());
 
-		this.secondPropertyPresenter = new CharacterPropertyPresenter();
+		this.secondPropertyPresenter = new PropertyPresenter();
 		this.controller.setMainListPane(this.secondPropertyPresenter.getNode());
 
 		this.modelManager = new CharacterManager();

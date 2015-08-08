@@ -6,6 +6,20 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="keyline.view.PropertyParameterController">
-    
+<AnchorPane id="AnchorPane" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="keyline.view.PropertyParameterController">
+	<children>
+	   <VBox layoutX="10.0" layoutY="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+		  <children>
+			 <TitledPane layoutX="14.0" layoutY="14.0" text="untitled" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+			   <content>
+				 <AnchorPane minHeight="0.0" minWidth="0.0">
+					  <children>
+						 <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Button" />
+					  </children>
+				   </AnchorPane>
+			   </content>
+			 </TitledPane>
+		  </children>
+	   </VBox>
+	</children>
 </AnchorPane>

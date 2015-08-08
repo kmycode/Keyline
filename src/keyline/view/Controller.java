@@ -5,10 +5,17 @@
  */
 package keyline.view;
 
+import javafx.scene.Node;
+import javafx.scene.layout.Pane;
+
 /**
  *
  * @author KMY
  */
 public abstract class Controller {
 
+	public void setChildNode (Pane parentNode, Node pane) {
+		parentNode.getChildren().clear();
+		parentNode.getChildren().add(pane);
+	}
 }

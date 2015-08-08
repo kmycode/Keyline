@@ -24,7 +24,7 @@ public abstract class Presenter {
 
 		FXMLData data = new FXMLData();
 
-		FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlName));
+		FXMLLoader loader = new FXMLLoader();
 		loader.setLocation(this.getClass().getResource("/keyline/view/" + fxmlName));
 		data.node = loader.load();
 		data.controller = (Controller) loader.getController();

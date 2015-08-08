@@ -14,7 +14,7 @@ import javafx.fxml.Initializable;
  *
  * @author KMY
  */
-public class PropertyRelationController implements Initializable {
+public class PropertyRelationController extends Controller implements Initializable {
 
 	/**
 	 * Initializes the controller class.

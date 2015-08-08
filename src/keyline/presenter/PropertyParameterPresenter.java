@@ -5,10 +5,26 @@
  */
 package keyline.presenter;
 
+import java.io.IOException;
+import keyline.domodel.Model;
+import keyline.view.PropertyParameterController;
+import keyline.viewmodel.PropertyParameterViewModel;
+
 /**
  *
  * @author KMY
  */
-public class PropertyParameterPresenter {
+public class PropertyParameterPresenter extends Presenter {
+
+	private PropertyParameterController controller;
+	private PropertyParameterViewModel viewModel;
+
+	private Model model;
+
+	public PropertyParameterPresenter () throws IOException {
+		FXMLData data = this.loadFXML("PropertyParameter.fxml");
+		this.controller = (PropertyParameterController) data.getController();
+		this.viewModel = new PropertyParameterViewModel();
+	}
 
 }
